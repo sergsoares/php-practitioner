@@ -1,9 +1,7 @@
 <?php
 
-require('functions.php');
-require('Task.php');
-
-$tasks = getAllTasks();
+$query = require('bootstrap.php');
+$tasks = $query->selectAll('tasks');
 
 require('view.php');
 
