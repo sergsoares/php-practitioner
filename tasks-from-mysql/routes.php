@@ -3,5 +3,6 @@
 
 $router->define([
     '' => 'controllers/MainController.php',
-    'about' => 'controllers/AboutController.php'
+    'company' => 'controllers/CompanyController.php',
+    'about' => 'controllers/AboutController.php',
 ]);
