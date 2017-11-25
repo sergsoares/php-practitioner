@@ -2,9 +2,14 @@
 
 class Connection
 {
-    public static function getConnection() {
+    public static function getConnection($config) {
         try{
-            $conn = new PDO('mysql:host=127.0.0.1;dbname=testing', 'root', 'root');
+            return new PDO(
+                $config['host'].';dbname='.$config['database'],
+                $config['username'],
+                $config['password'],
+                $config['options']
+            );
         } catch(PDOException $ex) {
             die($ex->getMessage());
         }
