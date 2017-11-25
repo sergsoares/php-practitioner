@@ -1,4 +1,5 @@
- <?php require('partials/header.view.php'); ?> 
+ 
+<?php require('partials/header.view.php'); ?> 
 
     <h1>About Page</h1>
 
