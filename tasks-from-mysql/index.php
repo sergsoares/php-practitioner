@@ -2,4 +2,7 @@
 
 require('core/bootstrap.php');
 
-View::render(Request::uri());
+require Router::load('routes.php')
+    ->direct($view);
+
+
