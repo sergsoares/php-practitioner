@@ -1,4 +1,4 @@
 <?php
 
 $tasks = $app['database']->selectAll('tasks');
-require('view/index.view.php');
+require('view/tasks.view.php');

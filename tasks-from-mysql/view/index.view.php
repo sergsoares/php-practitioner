@@ -1,12 +1,18 @@
-<?php require('partials/header.view.php'); ?> 
-        <h1>TODO</h1>
-        
-        <ul>
-            <?php foreach($tasks as $task): ?>
-                <li> 
-                    <?= $task->description ?>
-                </li>
-            <?php endforeach ?>
-        </ul>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Person Form</h1>
 
-<?php require('partials/footer.view.php'); ?> 
+        <form method="POST" action="/names">
+            <input type="text" name="name">            
+
+            <button type="submit"> Submit </button>
+        </form>
+    </body>
+</html>
