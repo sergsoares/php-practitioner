@@ -49,10 +49,16 @@ $tasks2 = [
 
 // var_dump($invertTasks);
 
-$titles = array_column($tasks, 'title');
+// $titles = array_column($tasks, 'title');
 
-var_dump($titles);
+// var_dump($titles);
 
+// $keys = array_values($tasks);
 
-// var_dump($tasks[0]->title);
-// var_dump($tasks2[0]['title']);
+// var_dump($keys);
+
+$completed = array_reduce($tasks, function($total, $task){
+    return $task->completed ? $total += 1 : $total;
+});
+
+var_dump($completed);
