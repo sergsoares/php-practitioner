@@ -9,8 +9,8 @@
 //     'names' => 'controllers/NameController.php',
 // ]);
 
-$router->get('', 'controllers/IndexController.php');
-$router->get('tasks', 'controllers/TaskController.php');
-$router->get('company', 'controllers/CompanyController.php');
-$router->get('about', 'controllers/AboutController.php');
-$router->post('names', 'controllers/NameController.php');
+$router->get('', 'PageController@index');
+$router->get('tasks', 'PageController@task');
+$router->get('company', 'PageController@company'); 
+$router->get('about', 'PageController@about'); 
+$router->post('names', ''); 
