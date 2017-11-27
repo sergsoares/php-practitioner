@@ -13,4 +13,8 @@ $router->get('', 'PageController@index');
 $router->get('tasks', 'PageController@task');
 $router->get('company', 'PageController@company'); 
 $router->get('about', 'PageController@about'); 
-$router->post('names', ''); 
+$router->post('', ''); 
+
+
+$router->get('users', 'UserController@index');
+$router->post('users', 'UserController@store');

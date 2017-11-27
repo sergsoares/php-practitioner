@@ -45,8 +45,9 @@ class Router
 
     protected function callAction($controller, $action)
     {
-        
-        if (! method_exists($controller, $action)) {
+        $controllerInstance = (new $controller);        
+
+        if (! method_exists($controllerInstance, $action)) {
             throw new Exception(
                 'This {$action} dont exists in {$controller}'
             );

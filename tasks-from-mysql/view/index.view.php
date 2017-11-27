@@ -9,7 +9,7 @@
     <body>
         <h1>Person Form</h1>
 
-        <form method="POST" action="/names">
+        <form method="POST" action="/users">
             <input type="text" name="name">            
 
             <button type="submit"> Submit </button>

@@ -7,9 +7,17 @@ App::bind('database', new QueryBuilder(
 ));
 
 
-function view($name)
+function view($name, $data = [])
 {
+
+    extract($data);
 
     require "view/{$name}.view.php";
     
+}
+
+function redirect($path)
+{
+  
+    header("Location: {$path}");
 }
