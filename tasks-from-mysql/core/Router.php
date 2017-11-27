@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Core;
+
+use App\Core\PageController;
+
 class Router
 {
     
@@ -45,6 +49,8 @@ class Router
 
     protected function callAction($controller, $action)
     {
+        $controller = "App\\Controller\\{$controller}";
+
         $controllerInstance = (new $controller);        
 
         if (! method_exists($controllerInstance, $action)) {
