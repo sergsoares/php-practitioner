@@ -1,0 +1,16 @@
+{
+    "name": "sergsoares/tasks-from-mysql",
+    "description": "Simple project to understand better about plain PHP.",
+    "authors": [
+        {
+            "name": "Sergio Soares",
+            "email": "acad.sergio@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
+
+}
