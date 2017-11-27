@@ -31,6 +31,7 @@ class Router
 
     public function direct($uri, $methodType) 
     {
+
         if(array_key_exists($uri, $this->routes[$methodType])) {
             return $this->callAction(
                 ...explode('@', $this->routes[$methodType][$uri])

@@ -6,22 +6,23 @@ class PageController
     public function task()
     {
         $tasks = $app['database']->selectAll('tasks');
-        require('view/tasks.view.php');
+
+        require('tasks');
     }
 
     public function about()
     {
-        require('view/about.view.php');
+        require('about');
     }
 
     public function company()
     {
-        require('view/company.view.php');
+        require('companyhp');
     }
 
     public function index()
     {
-        require('view/index.view.php');
+        return view('index');
     }
 
 

@@ -20,8 +20,6 @@ class QueryBuilder
 
     public function insert($table, $params){
 
-        // :name
-        
         $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)',
                 $table,
                 implode(', ' ,array_keys($params)),
