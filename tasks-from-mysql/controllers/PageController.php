@@ -7,17 +7,17 @@ class PageController
     {
         $tasks = $app['database']->selectAll('tasks');
 
-        require('tasks');
+        return view('tasks');
     }
 
     public function about()
     {
-        require('about');
+        return view('about');
     }
 
     public function company()
     {
-        require('companyhp');
+        return view('company');
     }
 
     public function index()

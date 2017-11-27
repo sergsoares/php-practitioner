@@ -8,13 +8,15 @@ class Router
         'POST' => []
     ];
      
-    public static function load($file){
+    public static function load($file)
+    {
         $router = new static;
 
         require($file);
 
         return $router;
     }
+
     public function define($routes) {
         $this->routes = $routes;
     }
