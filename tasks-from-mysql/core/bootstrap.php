@@ -16,7 +16,7 @@ function view($name, $data = [])
 
     extract($data);
 
-    require "view/{$name}.view.php";
+    require "app/view/{$name}.view.php";
     
 }
 
